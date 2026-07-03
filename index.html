@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XCode - Hack The Vibe</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <span class="glitch">X</span>Code
+                <span class="badge">v1.0</span>
+            </div>
+            <div class="stats">
+                <span>🏆 <span id="score">0</span></span>
+                <span>⚡ <span id="streak">0</span>x</span>
+                <span>🛠️ <span id="unlocked">0</span></span>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <div id="terminal">
+                <div id="question-area">
+                    <div id="code-display">
+                        <pre><code id="code-content">// Loading...</code></pre>
+                    </div>
+                    <div id="options">
+                        <button class="opt" data-index="0">A</button>
+                        <button class="opt" data-index="1">B</button>
+                        <button class="opt" data-index="2">C</button>
+                        <button class="opt" data-index="3">D</button>
+                    </div>
+                </div>
+                <div id="feedback"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <span>⚡ Powered by <span class="veyora">Veyora</span></span>
+            <span id="timer">⏱️ 30s</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
